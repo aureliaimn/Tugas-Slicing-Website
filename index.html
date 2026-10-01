@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Aurelia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-wrap">
+      <a href="#home" class="logo">Welcome</a>
+      <button id="menu-toggle" class="menu-toggle">&#9776;</button>
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#socmed">Social Media</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <div class="container">
+        <div class="hero-text">
+          <p class="greeting">Halo, saya</p>
+          <h1>Aurelia Imani Arindriaputri</h1>
+          <p class="role">Mahasiswa Teknologi Informasi, Fakultas Ilmu Komputer, Universitas Jember</p>
+        </div>
+        <img src="foto-aurelia.jpg" alt="Foto Aurelia" class="hero-photo">
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="about-box">
+          <h2>About Me</h2>
+          <p>Saat ini, saya adalah mahasiswa aktif semester 3 di Program Studi Teknologi Informasi. Selain aktif sebagai mahasiswa, saya juga memanfaatkan waktu saya dengan bergabung pada Himpunan Mahasiswa Teknologi Informasi (HIMATIF) dan Laboratorium Infrastruktur Teknologi (Lab Infratek). Saya aktif dalam berbagai program kerja yang diselenggarakan oleh HIMATIF dan kegiatan-kegiatan yang ada di Lab Infratek.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <article class="card">
+          <h3>CHEMLINK</h3>
+          <p>Aplikasi manajemen toko dan kasir berbasis C#.</p>
+        </article>
+        <article class="card">
+          <h3>E-Butcher</h3>
+          <p>Perancangan sistem pengelolaan stok dan jual beli toko daging</p>
+        </article>
+      </div>
+    </section>
+
+  <section id="socmed" class="section section-alt">
+      <div class="container">
+        <div class="about-box">
+          <h2>Social Media</h2>
+          <a href="https://github.com/aureliaimn">
+            <img src="logo-github.png" alt="Github" class="social-icon">
+          </a>
+          <a href="https://instagram.com/aureliaimn">
+            <img src="logo-instagram.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.linkedin.com/in/aureliaimn/">
+            <img src="logo-linkedin.png" alt="Linkedin" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <input type="text" id="name" placeholder="Nama">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" rows="4" placeholder="Pesan"></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Aurelia Imani</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
